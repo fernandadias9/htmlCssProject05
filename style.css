@@ -1,0 +1,245 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+  font-family: 'Mulish', sans-serif;
+
+  --color-textPurple: #B52184;
+  --color-textBlue: #312D64;
+  --color-bGOffWhite: #F9F4FB;
+  --color-bGBlue: #343193;
+}
+
+body {
+  display: grid;
+  width: 43rem;
+  background: var(--color-bGOffWhite);
+}
+
+.introduction {
+  background: var(--color-bGOffWhite);
+  padding: 0 3.4rem 9.3rem 3.2rem;
+  text-align: center;
+}
+
+#astronauta {
+  margin-bottom: 1.7rem;
+}
+
+.introduction h1 {
+  color: var(--color-textPurple);
+  font-size: 3.2rem;
+  font-weight: 900;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-text-stroke: 1px #000;
+}
+
+.introduction p {
+  color: var(--color-textBlue);
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 3.5rem;
+}
+
+.introduction button {
+  border: none;
+  background: var(--color-bGOffWhite);
+}
+
+#cards {
+  height:fit-content;
+  display: grid;
+  gap: 5rem;
+  background: var(--color-bGBlue);
+  padding: 5.3rem 3.9rem;
+}
+
+.card {
+  background: #ffffff;
+  padding: 2.7rem;
+  border-radius: 2rem;
+}
+
+.card img {
+  margin-bottom: 3.3rem;
+  width: 8rem;
+  height: 8rem;
+}
+
+.card h1 {
+  color:var(--color-textPurple);
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 2rem;
+}
+
+.card p {
+  color: var(--color-textBlue);
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 600;
+  width: 26rem;
+}
+
+#my-form {  
+  padding: 7.6rem 4rem 6.5rem;
+  background: var(--color-bGOffWhite);
+}
+
+fieldset {
+  display: grid;
+  gap: 2.4rem;
+  border: none;
+  padding-bottom: 2.4rem;
+}
+
+fieldset legend {
+  color: var(--color-textPurple);
+  font-size: 32px;
+  font-weight: 900;
+  margin-bottom: 4.5rem;
+}
+
+fieldset input {
+  border-radius: 16px;
+  border: 1.5px solid var(--color-textBlue);
+  height: 4.8rem;
+}
+
+fieldset input::placeholder, textarea::placeholder {
+  color: var(--color-textBlue);
+  font-family: Mulish;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+fieldset .nome {
+  position: relative;
+}
+
+.person {
+  position: absolute;
+  z-index: 1;
+  margin-left: 1.4rem;
+  margin-top: 1.2rem;
+}
+
+fieldset .nome, .email {
+  padding-left: 5rem;
+}
+
+.at {
+  position: absolute;
+  z-index: 1;
+  margin-left: 1.4rem;
+  margin-top: 8.3rem;
+}
+
+fieldset textarea {
+  border-radius: 16px;
+  border: 1.5px solid var(--color-textBlue);
+  padding: 1.2rem 0 0 1.6rem;
+}
+
+button {  
+  width: 15rem;
+  height: 4.5rem;  
+  border: none;
+  border-radius: 16px;
+  background: linear-gradient(96deg, #343193 0%, #302C63 99.68%);
+  
+  color: #ffffff;
+  font-family: Mulish;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 2.4rem;   
+}
+
+#stars {
+  display: none;
+}
+
+footer {
+  display: grid;
+  height: 7.8rem;
+  background: var(--color-bGBlue);
+  text-align: center;
+  align-items: center;
+  color: #FFF;  
+  font-size: 2rem;
+}
+
+@media (min-width: 768px) {
+  body {
+    height: 210rem;
+    width: 100vw;
+  }
+
+  .introduction {
+    height: 83rem;
+  }
+
+  #astronauta {
+    margin-bottom: 2.4rem;
+  }
+
+  .introduction h1 {
+    font-size: 6rem;
+  }
+
+  .introduction p {
+    font-size: 4rem;
+    margin-bottom: 5.4rem;
+  }
+
+  #cards {
+    display: flex;
+    height: 57.6rem;
+    padding: 6.4rem 11rem;
+    gap: 6rem;
+  }
+
+  .card {
+    width: 100%;
+    padding: 3.2rem 1.3rem 7.2rem 3.2rem;
+  }
+
+  .card img {
+    width: 9.7rem;
+    height: 9.7rem;
+    margin-bottom: 4rem;
+  }
+
+  .card h1 {
+    font-size: 3.5rem;
+    margin-bottom: 2.4rem;
+  }
+
+  .card p {
+    font-size: 1.9rem;
+    width: 32rem;
+  }
+
+  .form {
+    display: flex;
+    gap: 9.2rem;
+  }
+
+  #my-form {
+    width: 50%;
+    height: 47rem;
+    padding: 9.5rem 0 9.5rem 10.9rem;
+  }
+
+  #stars {
+    display: inline;
+    margin-right: 0;
+    width: 50%;
+  }
+}
